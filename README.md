@@ -119,7 +119,7 @@ bazu podataka MariaDB.
 
 BookStack kontejner ima HTTP server koji sluša na portu 80. SSL terminacija se
 obavlja na reverznom proksiju čija javna adresa je 89.216.122.103, a na ovu 
-adresu upućuje i Internet domen aplikacije `enciklopedija.maticasrpska.org.rs`.
+adresu upućuje i Internet domen aplikacije `srpskaenciklopedija.rs`.
 
 Svi skriptovi i podaci aplikacije nalaze se u direktorijumu 
 `/var/dockersites/bookstack`:
@@ -153,7 +153,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - APP_URL=https://enciklopedija.maticasrpska.org.rs
+      - APP_URL=https://srpskaenciklopedija.rs
       - DB_HOST=bookstack_db
       - DB_PORT=3306
       - DB_USER=bookstack
